@@ -297,63 +297,16 @@
 			</div>
 		</section>
 		<section class="container-fluid section" id="section4">
-			<input type="text" id="data" placeholder="Where should I work next?"></input>
-			<input type="button" id="load" value="SUBMIT! ↓" >
-			<div id="visualization" style="margin-top: 5vh;">
-				<div class="menu">
-        <input type="button" class="zoom" id="zoomIn" value="Zoom in">
-        <input type="button" class="zoom" id="zoomOut" value="Zoom out">
-    </div>
-			</div>
-			<script type="text/javascript">
-			  // DOM element where the Timeline will be attached
-			  var container = document.getElementById('visualization');
-
-			  // Create a DataSet (allows two way data-binding)
-			  var today = new Date();
-			  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-
-			  var items = new vis.DataSet([
-			  	{id: 1, content: 'EYEBEAM <br>Resident', start: '2014-02-01', end:'2015-08-30', type:'range'},
-			  	{id: 2, content: 'Consultant <br>for NYCDOE', start: '2016-07-15',type:""},
-			  	{id: 3, content: 'Consultant <br>for NYCDOE', start: '2017-07-15', type:""},
-			  	{id: 4, content: 'Parsons Design+Tech BFA', start: '2015-09-01', end: '2019-05-30'},
-			  	{id: 5, content: 'Cornell-Tech ', start: '2017-09-01', }
-			  	]);
-
-			  // Configuration for the Timeline
-			  var options = {
-			  	height: '70vh',
-			  	zoomable: false,
-			  	start: new Date(2013, 12, 21),
-			  	end: new Date(2018, 9, 30),
-			  	min: new Date(2012,12,10),
-			  	max: new Date(2020,03,20)
-			  };
-
-			  // Create a Timeline
-			  var timeline = new vis.Timeline(container, items, options);
-
-			  var txtData = document.getElementById('data');
-			  var btnLoad = document.getElementById('load');
-			  function loadData () {
-			  	var temp="[{\"id\":"+Math.round(Math.random() * 100)+",\"content\":\""+txtData.value+"\",\"start\":\"2018-05-30\"}]"
-			  	var data = JSON.parse(temp);
-			  	if(txtData.value != ""){ 
-
-			  		items.add(data);
-
-			    // adjust the timeline window such that we see the loaded data
-			    timeline.fit();
-			}
-		}
-		btnLoad.onclick = loadData;
-		 // attach events to the navigation buttons
-    document.getElementById('zoomIn').onclick    = function () { timeline.zoomIn( 0.5); };
-    document.getElementById('zoomOut').onclick   = function () { timeline.zoomOut( 0.5); };
-   
-
-	</script>
+			<div class="sidebar" width="250" height="80" >
+				<div class="def" style="margin:3px;" width="250" height="80" > 
+				  <text>Select Band or Solo Artist</text>
+				</div>
+				<iframe class="frame" src="" width="250" height="83" frameborder="0" allowtransparency="true"></iframe>
+			  </div>
+			<svg width="960" height="600"></svg>
+			  <p class="desc" style="background-color:yellow;width:200px;position:absolute;top:50px;right:50px;">Some of my favourite artists and their connections to each other!</p>
+			<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="readyForTheFloor.js"></script>
 </section>
 <div style="visibility: hidden;">
 	<div id="sixdegreesImg">

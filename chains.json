@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {"id":"DFA", "group":3}
+    ,{"id":"Moshi Moshi","group":3}
+    ,{"id":"Greco-Roman","group":3}
+    ,{"id":"Geej","group":3}
+    ,{"id":"Domino","group":3}
+    ,{"id":"Hot Chip", "group": 2, "src":"https://open.spotify.com/embed?uri=spotify:track:0WRBqQcmnZbnLTiFG3Ohqj"}
+    ,{"id":"Alexis Taylor", "group": 0, "src":"https://open.spotify.com/embed?uri=spotify:track:60VMigpKdkZ4oRtdDbfQGR"}
+    ,{"id":"Joe Goddard", "group": 0, "src":"https://open.spotify.com/embed?uri=spotify:track:61ApmtpgTkS74VHagY0piE"}
+    ,{"id":"Owen Clarke","group":1}
+    ,{"id":"Al Doyle","group":1}
+    ,{"id":"Felix Martin","group":1}
+    ,{"id":"Sarah Jones","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:5IXgl6ter3JBFLOZ743r5S"}
+    ,{"id":"LCD Soundsystem","group":2, "src":"https://open.spotify.com/embed?uri=spotify:track:1XlDNpWy8dyEljyRd0RC2J"}
+    ,{"id":"Nancy Whang","group":1}
+    ,{"id":"James Murphy","group":1}
+    ,{"id":"Pat Mahoney","group":1}
+    ,{"id":"David Scott Stone","group":1}
+    ,{"id":"Tyler Pope","group":1}
+    ,{"id":"Matt Thornley","group":1}
+    ,{"id":"Gavin Russom","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:4MLs7sHGgCrAxTDytyf4cm"}
+    ,{"id":"Phil Skarich ","group":1}
+    ,{"id":"Jerry Fuchs","group":1}
+    ,{"id":"Phil Mossman","group":1}
+    ,{"id":"J.D. Mark","group":1}
+    ,{"id":"Museum of Love", "group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:0W3qmobCsSJDxxzV1AWDtW"}
+    ,{"id":"Deniss McNany","group":1}
+    ,{"id":"The 2 Bears","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:4ze2R3Zh4JWAtiHfkLVCS8"}
+    ,{"id":"Raf Rundell","group":1}
+    ,{"id":"The Juan MacLean","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:7noMnBSQQMD10TkUvMmlsn"}
+    ,{"id":"John MacLean","group":1}
+    ,{"id":"Technology + Teamwork","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:4eHfZxv0ohYLtQm6lrOcCb"}
+    ,{"id":"Anthony Silvester","group":1}
+    ,{"id":"New Build","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:1yEnnr4axymQu6rMEH7o1W"}
+    ,{"id":"NZCA LINES","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:4apipt30PCKjGlgnhUcVUP"}
+    ,{"id":"Michael Lovett","group":1}
+    ,{"id":"Charlotte Hatherly","group":1}
+    ,{"id":"Greco-Roman Soundsystem","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:4DATfC785Rh87SwzkVkkEB"}
+    ,{"id":"Alexander Waldron","group":0}
+    ,{"id":"Dominic Mentsh","group":4}
+    ,{"id":"A Pulse Train","group":2,"src":"https://open.spotify.com/embed?uri=spotify:track:3YnB06Rta3aTYSMJHiBZOC"}
+    ,{"id":"Jeremy Greenspan","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:7kQcrxfjNZs6kh4PsZmNZw"}
+    ,{"id":"Sam Shepherd","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:3vwtKHxEYG6jjcmoEk8J6q"}
+    ,{"id":"Dan Snaith","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:3D1P3oPecqAQy2u33gAhsM"}
+    ,{"id":"James Shaw","group":0,"src":"https://open.spotify.com/embed?uri=spotify:track:2EHJ6ZojCLRuEoTf3YsmnB"}
+    ,{"id":"About Group","group":2}
+    ,{"id":"John Coxon","group":0}
+    ,{"id":"Pat Thomas","group":0}
+    ,{"id":"Charles Hayward","group":0}
+
+  ],
+  "links": [
+    {"source":"DFA","target":"LCD Soundsystem"}
+    ,{"source":"DFA","target":"Hot Chip"}
+    ,{"source":"DFA","target":"Museum of Love"}
+    ,{"source":"DFA","target":"The 2 Bears"}
+    ,{"source":"DFA","target":"Joe Goddard"}
+    ,{"source":"DFA","target":"Gavin Russom"}
+    ,{"source":"DFA","target":"The Juan MacLean"}
+    ,{"source":"Moshi Moshi","target":"Hot Chip"}
+    ,{"source":"Moshi Moshi","target":"Alexis Taylor"}
+    ,{"source":"Moshi Moshi","target":"Sarah Jones"}
+    ,{"source":"Greco-Roman","target":"Joe Goddard"}
+    ,{"source":"Greco-Roman","target":"Greco-Roman Soundsystem"}
+    ,{"source":"Geej","target":"A Pulse Train"}
+    ,{"source":"Geej","target":"Jeremy Greenspan"}
+    ,{"source":"Domino","target":"Hot Chip"}
+    ,{"source":"Domino","target":"Alexis Taylor"}
+    ,{"source":"Domino","target":"About Group"}
+    ,{"source":"Hot Chip","target": "Alexis Taylor", "value": 1}
+    ,{"source":"Hot Chip","target":"Sarah Jones","value":1}
+    ,{"source":"Hot Chip","target": "Joe Goddard", "value": 1}
+    ,{"source":"Hot Chip","target":"Owen Clarke","value":1}
+    ,{"source":"Hot Chip","target":"Al Doyle","value":1}
+    ,{"source":"Hot Chip","target":"Felix Martin","value":1}
+    ,{"source":"LCD Soundsystem","target":"Al Doyle","value":1}
+    ,{"source":"LCD Soundsystem","target":"Nancy Whang","value":1}
+    ,{"source":"LCD Soundsystem","target":"James Murphy","value":1}    
+    ,{"source":"LCD Soundsystem","target":"Pat Mahoney","value":1}
+    ,{"source":"LCD Soundsystem","target":"Tyler Pope","value":1}
+    ,{"source":"LCD Soundsystem","target":"David Scott Stone","value":1}
+    ,{"source":"LCD Soundsystem","target":"Matt Thornley","value":1}
+    ,{"source":"LCD Soundsystem","target":"Gavin Russom","value":1}
+    ,{"source":"LCD Soundsystem","target":"Phil Skarich ","value":1}
+    ,{"source":"LCD Soundsystem","target":"Jerry Fuchs","value":1}
+    ,{"source":"LCD Soundsystem","target":"Phil Mossman","value":1}
+    ,{"source":"LCD Soundsystem","target":"J.D. Mark","value":1}
+    ,{"source":"Museum of Love", "target":"Pat Mahoney"}
+    ,{"source":"Museum of Love","target":"Deniss McNany"}
+    ,{"source":"The 2 Bears", "target":"Joe Goddard"}
+    ,{"source":"The 2 Bears", "target":"Raf Rundell"}
+    ,{"source":"The Juan MacLean", "target":"John MacLean"}
+    ,{"source":"The Juan MacLean", "target":"Nancy Whang"}
+    ,{"source":"Technology + Teamwork", "target":"Sarah Jones"}
+    ,{"source":"Technology + Teamwork", "target":"Anthony Silvester"}
+    ,{"source":"New Build","target":"Felix Martin"}
+    ,{"source":"New Build","target":"Al Doyle"}
+    ,{"source":"NZCA LINES","target":"Sarah Jones"}
+    ,{"source":"NZCA LINES","target":"Michael Lovett"}
+    ,{"source":"NZCA LINES","target":"Charlotte Hatherly"}
+    ,{"source":"Greco-Roman Soundsystem","target":"Alexander Waldron"}
+    ,{"source":"Greco-Roman Soundsystem","target":"Dominic Mentsh"}
+    ,{"source":"Greco-Roman Soundsystem","target":"Joe Goddard"}
+    ,{"source":"A Pulse Train","target":"Joe Goddard"}
+    ,{"source":"A Pulse Train","target":"Jeremy Greenspan"}
+    ,{"source":"A Pulse Train","target":"Sam Shepherd"}
+    ,{"source":"A Pulse Train","target":"Dan Snaith"}
+    ,{"source":"A Pulse Train","target":"James Shaw"}
+    ,{"source":"About Group","target":"Alexis Taylor"}
+    ,{"source":"About Group","target":"John Coxon"}
+    ,{"source":"About Group","target":"Pat Thomas"}
+    ,{"source":"About Group","target":"Charles Hayward"}
+  ]
+}
