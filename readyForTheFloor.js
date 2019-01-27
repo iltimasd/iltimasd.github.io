@@ -41,7 +41,6 @@
   d.weight = link.filter(function(l) {
   return l.source == d.id || l.target.index == d.index
   }).size();
-  console.log(d.index+":"+d.weight);
   return (d.weight*-150)-100; 
 }).distanceMax(300))
  .force("collide", d3.forceCollide().radius(function(d) { return 10; }))
