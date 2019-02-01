@@ -33,13 +33,13 @@
  .enter().append("text")
  .attr("class", "label")
  .attr("fill", "black")
- .attr("dx", function(d){return 9})
+ .attr("dx", function(d){return 9;})
  .text(function(d) {  return d.id;  });
  simulation
  .nodes(graph.nodes)
  .force("charge", d3.forceManyBody().strength(function(d) {
   d.weight = link.filter(function(l) {
-  return l.source == d.id || l.target.index == d.index
+  return l.source == d.id || l.target.index == d.index;
   }).size();
   console.log(d.index+":"+d.weight);
   return (d.weight*-150)-100; 
@@ -47,7 +47,7 @@
  .force("collide", d3.forceCollide().radius(function(d) { return 10; }))
  .on("tick", ticked);
  simulation.force("link")
- .links(graph.links)
+ .links(graph.links);
  function ticked() {
    link
    .attr("x1", function(d) { return d.source.x; })
