@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+
 	<title>iltimas doha</title>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./jquery.onepage-scroll.min.js"></script>
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|PT+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
@@ -54,7 +54,7 @@
 			if(x>0){
 				x=x-1;
 			}
-			
+
 			for (var i = 0; i < 200; i++){
 				text += possible.charAt(Math.floor(Math.random() * x));
 				for(var j = Math.floor(Math.random() * x); j>0; j--){
@@ -66,7 +66,7 @@
 			$(".rightGlitch").text(text);
 			$(".bottomGlitch").text(text);
 			$(".leftGlitch").text(text);
-			
+
 			if(x==0){
 				text=page;
 				$(".topSidebar").text(text);
@@ -90,7 +90,7 @@
 			if(x<possible.length){
 				x=x+1;
 			}
-			
+
 			for (var i = 0; i < 200; i++){
 				text += possible.charAt(Math.floor(Math.random() * x));
 				for(var j = Math.floor(Math.random() * x); j>0; j--){
@@ -130,14 +130,20 @@
 			</div>
 			<!-- <img class="img-responsive" src="https://raw.githubusercontent.com/iltimasd/portfolio/master/img/profile.png" alt=""> -->
 			<div class="arrow bounce">
+<<<<<<< HEAD
 				<h1 class="fa fa-arrow-down fa-2x" href="#">&#10225;</h1>
 			</div>
 		</div>
 
+=======
+  <h1 class="fa fa-arrow-down fa-2x" href="#">&#10225;</h1>
+</div>
+>>>>>>> parent of 0960707... reindent
 		</section>
 <<<<<<< HEAD
 		<section class="container-fluid section" id="section2">
 			<div style="padding: 10px;">
+<<<<<<< HEAD
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="selection btn-group-vertical hidden-xs ">
@@ -362,6 +368,160 @@
 							</html>
 							
 =======
+=======
+			<div class="row">
+				<div class="col-sm-3">
+				<div class="selection btn-group-vertical hidden-xs ">
+					<input class="portBtn" type="radio" name="options" id="Dispatch" checked>
+					<label class="btn btn-primary" for="Dispatch">
+						Dispatch
+					</label>
+
+				
+					<input class="portBtn" type="radio" name="options" id="Conflict">
+					<label class="btn btn-primary" for="Conflict">
+						Conflict
+					</label>
+
+					<input class="portBtn" type="radio" name="options" id="Only">
+					<label class="btn btn-primary" for="Only">
+						Only 6°
+					</label>
+
+					<input class="portBtn" type="radio" name="options" id="Plant">
+					<label class="btn btn-primary" for="Plant">
+						My 1st Plant
+					</label>
+
+					<input class="portBtn" type="radio" name="options" id="Dirty">
+					<label class="btn btn-primary" for="Dirty">
+						Dirty Baby
+					</label>
+
+					<!-- <input class="portBtn" type="radio" name="options" id="NorthFacing">
+					<label class="btn btn-primary" for="NorthFacing">
+						NorthFacing
+					</label> -->
+
+						<!-- <input class="portBtn" type="radio" name="options" id="DTArchive">
+					<label class="btn btn-primary" for="DTArchive">
+						DTArchive
+					</label> -->
+
+				</div>
+				<div class="selection btn-group hidden-sm hidden-md hidden-lg">
+					<input class="portBtn" type="radio" name="options2" id="Dispatch2" checked>
+					<label class="btn btn-primary" for="Dispatch2">
+						Dispatch
+					</label>
+
+					<input class="portBtn" type="radio" name="options2" id="Conflict2">
+					<label class="btn btn-primary" for="Conflict2">
+						Conflict
+					</label>
+
+					<input class="portBtn" type="radio" name="options2" id="Only2">
+					<label class="btn btn-primary" for="Only2">
+						Only 6°
+					</label>
+
+					<input class="portBtn" type="radio" name="options2" id="Plant2">
+					<label class="btn btn-primary" for="Plant2">
+						My 1st Plant
+					</label>
+
+					<input class="portBtn" type="radio" name="options2" id="Dirty2">
+					<label class="btn btn-primary" for="Dirty2">
+						Dirty Baby
+					</label>
+
+					<!-- <input class="portBtn" type="radio" name="options2" id="NorthFacing2">
+					<label class="btn btn-primary" for="NorthFacing2">
+						NorthFacing
+					</label> -->
+
+					<!-- <input class="portBtn" type="radio" name="options2" id="DTArchive2">
+					<label class="btn btn-primary" for="DTArchive2">
+						DTArchive
+					</label> -->
+				</div>
+				
+
+				<div class="descShot">
+
+				<h2>App connecting allies and twitter users to fight hate speech</h2><h3><a href="https://medium.com/p/4d0cb4057916" target="_blank" class="external">Read More ↪</a></h3>
+				</div>
+			</div>
+							<div id="portfolioContainter" class="col-sm-9">
+
+				<img id="portfolio" class="img-responsive" src="./img/dispatch.gif">
+			</div>
+			</div>
+		</div>
+			<script type="text/javascript">
+				$(".portBtn").click(function(){
+					if(event.target.id=="Dirty"){
+						$("#portfolioContainter").html($("#synthImg").html());
+						$(".descShot").html($("#synthTxt").html());
+					}
+					if(event.target.id=="NorthFacing"){
+						$("#portfolioContainter").html($("#northImg").html());
+						$(".descShot").html($("#northTxt").html());
+					}
+					if(event.target.id=="Plant"){
+						$("#portfolioContainter").html($("#plantImg").html());
+						$(".descShot").html($("#plantTxt").html());
+					}
+					if(event.target.id=="Only"){
+						$("#portfolioContainter").html($("#sixdegreesImg").html());
+						$(".descShot").html($("#sixdegreesTxt").html());
+					}
+					if(event.target.id=="Conflict"){
+						$("#portfolioContainter").html($("#conflictImg").html());
+						$(".descShot").html($("#conflictTxt").html());
+					}
+					if(event.target.id=="DTArchive"){
+						$("#portfolioContainter").html($("#archiveImg").html());
+						$(".descShot").html($("#archiveTxt").html());
+					}
+					if(event.target.id=="Dispatch"){
+						$("#portfolioContainter").html($("#dispatchImg").html());
+						$(".descShot").html($("#dispatchTxt").html());
+					}
+
+					if(event.target.id=="Dirty2"){
+						$("#portfolioContainter").html($("#synthImg").html());
+						$(".descShot").html($("#synthTxt").html());
+					}
+					if(event.target.id=="NorthFacing2"){
+						$("#portfolioContainter").html($("#northImg").html());
+						$(".descShot").html($("#northTxt").html());
+					}
+					if(event.target.id=="Plant2"){
+						$("#portfolioContainter").html($("#plantImg").html());
+						$(".descShot").html($("#plantTxt").html());
+					}
+					if(event.target.id=="Only2"){
+						$("#portfolioContainter").html($("#sixdegreesImg").html());
+						$(".descShot").html($("#sixdegreesTxt").html());
+					}
+					if(event.target.id=="Conflict2"){
+						$("#portfolioContainter").html($("#conflictImg").html());
+						$(".descShot").html($("#conflictTxt").html());
+					}
+					if(event.target.id=="DTArchive2"){
+						$("#portfolioContainter").html($("#archiveImg").html());
+						$(".descShot").html($("#archiveTxt").html());
+					}
+					if(event.target.id=="Dispatch2"){
+						$("#portfolioContainter").html($("#dispatchImg").html());
+						$(".descShot").html($("#dispatchTxt").html());
+					}
+
+				});
+			</script>
+		</section>
+>>>>>>> parent of 0960707... reindent
 		<section class="container-fluid section" id="section3">
 			<div class="img-container">
 				<div class="col-md-6">
@@ -403,7 +563,11 @@
 		<img id="portfolio" class="img-responsive" src="./img/synth.jpg">
 	</div>
 	<div id="synthTxt">
+<<<<<<< HEAD
 		<h2>Dual VCO Semi-Modular Atari Punk Console</h2><h3><a href="https://medium.com/p/e1a96f5047a5" target="_blank" class="external">Read More ↪</a></h3>
+=======
+		<h2>Dual VCO Semi-Modular Atari Punk Console</h2><h3><a href="https://medium.com/@iltimasdoha/core-studio-dirty-baby-eb8d1a70f90a" target="_blank" class="external">Read More ↪</a></h3>
+>>>>>>> parent of 0960707... reindent
 	</div>
 	<div id="northImg">		
 		<img id="portfolio" class="img-responsive" src="./img/north.jpg">
@@ -432,4 +596,7 @@
 </div>
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> parent of 92149ff... Merge branch 'master' of https://github.com/iltimasd/iltimasd.github.io
+=======
+>>>>>>> parent of 0960707... reindent
