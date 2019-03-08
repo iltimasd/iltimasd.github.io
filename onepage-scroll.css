@@ -26,12 +26,6 @@ body, .onepage-wrapper, html {
 .onepage-wrapper .section {
   width: 100%;
   height: 100%;
-  transform: translateZ(-100px)
-
-}
-.main{
-  perspective: 900px;
-
 }
 
 .onepage-pagination {
