@@ -180,7 +180,7 @@
         <div style="width:75%">
           <h1 class="title">
             Iltimas Doha is an <br />
-            interaction designer and student at<br />
+            interaction designer and recent student at<br />
             Parsons & Cornell.
           </h1>
         </div>
@@ -190,7 +190,7 @@
         </div>
       </section>
       <section class="container-fluid section" id="section2">
-        <div style="padding: 10px;">
+        <div class="row-container" style="padding: 10px;">
           <div class="row">
             <div class="col-sm-3">
               <div class="selection btn-group-vertical hidden-xs ">
@@ -198,8 +198,18 @@
                   class="portBtn"
                   type="radio"
                   name="options"
-                  id="Dispatch"
+                  id="DJBooth"
                   checked
+                />
+                <label class="btn btn-primary" for="DJBooth">
+                  DJ Booth
+                </label>
+
+                <input
+                  class="portBtn"
+                  type="radio"
+                  name="options"
+                  id="Dispatch"
                 />
                 <label class="btn btn-primary" for="Dispatch">
                   Dispatch
@@ -245,8 +255,18 @@
                   class="portBtn"
                   type="radio"
                   name="options2"
-                  id="Dispatch2"
+                  id="DJBooth2"
                   checked
+                />
+                <label class="btn btn-primary" for="DJBooth2">
+                  DJ Booth
+                </label>
+
+                <input
+                  class="portBtn"
+                  type="radio"
+                  name="options2"
+                  id="Dispatch2"
                 />
                 <label class="btn btn-primary" for="Dispatch2">
                   Dispatch
@@ -305,11 +325,12 @@
 
               <div class="descShot">
                 <h2>
-                  App connecting allies and twitter users to fight hate speech
+                  Interactive where users become the DJ controlling sound and lights
+                  with vinyl
                 </h2>
                 <h3>
                   <a
-                    href="https://medium.com/p/4d0cb4057916"
+                    href="https://medium.com/@iltimasdoha/dj-booth-855a1ce4da4d"
                     target="_blank"
                     class="external"
                     >Read More ↪</a
@@ -321,69 +342,56 @@
               <img
                 id="portfolio"
                 class="img-responsive"
-                src="./img/dispatch.gif"
+                src="./img/dj.jpg"
               />
             </div>
           </div>
         </div>
         <script type="text/javascript">
           $(".portBtn").click(function() {
-            if (event.target.id == "Dirty") {
+            if (event.target.id == "Dirty" || event.target.id == "Dirty2") {
               $("#portfolioContainter").html($("#synthImg").html());
               $(".descShot").html($("#synthTxt").html());
             }
-            if (event.target.id == "NorthFacing") {
+            if (
+              event.target.id == "NorthFacing" ||
+              event.target.id == "NorthFacing2"
+            ) {
               $("#portfolioContainter").html($("#northImg").html());
               $(".descShot").html($("#northTxt").html());
             }
-            if (event.target.id == "Plant") {
+            if (event.target.id == "Plant" || event.target.id == "Plant2") {
               $("#portfolioContainter").html($("#plantImg").html());
               $(".descShot").html($("#plantTxt").html());
             }
-            if (event.target.id == "Only") {
+            if (event.target.id == "Only" || event.target.id == "Only2") {
               $("#portfolioContainter").html($("#sixdegreesImg").html());
               $(".descShot").html($("#sixdegreesTxt").html());
             }
-            if (event.target.id == "Conflict") {
+            if (
+              event.target.id == "Conflict" ||
+              event.target.id == "Conflict2"
+            ) {
               $("#portfolioContainter").html($("#conflictImg").html());
               $(".descShot").html($("#conflictTxt").html());
             }
-            if (event.target.id == "DTArchive") {
+            if (
+              event.target.id == "DTArchive" ||
+              event.target.id == "DTArchive2"
+            ) {
               $("#portfolioContainter").html($("#archiveImg").html());
               $(".descShot").html($("#archiveTxt").html());
             }
-            if (event.target.id == "Dispatch") {
+            if (
+              event.target.id == "Dispatch" ||
+              event.target.id == "Dispatch2"
+            ) {
               $("#portfolioContainter").html($("#dispatchImg").html());
               $(".descShot").html($("#dispatchTxt").html());
             }
-
-            if (event.target.id == "Dirty2") {
-              $("#portfolioContainter").html($("#synthImg").html());
-              $(".descShot").html($("#synthTxt").html());
-            }
-            if (event.target.id == "NorthFacing2") {
-              $("#portfolioContainter").html($("#northImg").html());
-              $(".descShot").html($("#northTxt").html());
-            }
-            if (event.target.id == "Plant2") {
-              $("#portfolioContainter").html($("#plantImg").html());
-              $(".descShot").html($("#plantTxt").html());
-            }
-            if (event.target.id == "Only2") {
-              $("#portfolioContainter").html($("#sixdegreesImg").html());
-              $(".descShot").html($("#sixdegreesTxt").html());
-            }
-            if (event.target.id == "Conflict2") {
-              $("#portfolioContainter").html($("#conflictImg").html());
-              $(".descShot").html($("#conflictTxt").html());
-            }
-            if (event.target.id == "DTArchive2") {
-              $("#portfolioContainter").html($("#archiveImg").html());
-              $(".descShot").html($("#archiveTxt").html());
-            }
-            if (event.target.id == "Dispatch2") {
-              $("#portfolioContainter").html($("#dispatchImg").html());
-              $(".descShot").html($("#dispatchTxt").html());
+            if (event.target.id == "DJBooth" || event.target.id == "DJBooth2") {
+              $("#portfolioContainter").html($("#djImg").html());
+              $(".descShot").html($("#djTxt").html());
             }
           });
         </script>
@@ -459,6 +467,23 @@
           <h3>
             <a
               href="https://medium.com/@iltimasdoha/conflict-version-3-c0cfbb595b16"
+              target="_blank"
+              class="external"
+              >Read More ↪</a
+            >
+          </h3>
+        </div>
+        <div id="djImg">
+          <img id="portfolio" class="img-responsive" src="./img/dj.jpg" />
+        </div>
+        <div id="djTxt">
+          <h2>
+            Interactive where users become the DJ controlling sound and lights
+            with vinyl
+          </h2>
+          <h3>
+            <a
+              href="https://medium.com/@iltimasdoha/dj-booth-855a1ce4da4d"
               target="_blank"
               class="external"
               >Read More ↪</a

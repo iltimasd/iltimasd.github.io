@@ -12,6 +12,20 @@ body {
 	padding: 5vmin 5vmin 5vmin 5vmin;
 	height: 100vh;
 }
+.row-container{
+	height: 100%;
+}
+.row{
+	height: 100%;
+}
+#portfolioContainter{
+	height: 100%;
+}
+
+#portfolio{
+	margin: auto;
+}
+
 .leftSidebar, .rightSidebar, .topSidebar, .bottomSidebar{
 	font-family: 'VT323', monospace;
 	font-weight:400;
